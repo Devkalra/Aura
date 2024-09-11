@@ -1,0 +1,1 @@
+ C:\\Users\\LENOVO\\StudioProjects\\Etherplex-master\\.dart_tool\\flutter_build\\2f48cc5dfc6d6dd9bbcd2c393ac03867\\native_assets.yaml: 

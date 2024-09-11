@@ -1,0 +1,234 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.ether_plex"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:3:5-66
+15-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:3:22-64
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:2:5-70
+16-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:2:22-68
+17    <uses-permission android:name="android.permission.BLUETOOTH" />
+17-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:4:5-67
+17-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:4:22-65
+18    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+18-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:5:5-73
+18-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:5:22-71
+19    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+19-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:6:5-75
+19-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:6:22-73
+20
+21    <queries>
+21-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:7:5-11:15
+22        <intent>
+22-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:8:9-10:18
+23            <action android:name="android.speech.RecognitionService" />
+23-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:9:13-72
+23-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:9:21-69
+24        </intent>
+25    </queries>
+26    <!--
+27 Required to query activities that can process text, see:
+28         https://developer.android.com/training/package-visibility?hl=en and
+29         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+30
+31         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+32    -->
+33    <queries>
+33-->C:\Users\LENOVO\StudioProjects\Etherplex-master\android\app\src\main\AndroidManifest.xml:7:5-11:15
+34        <intent>
+35            <action android:name="android.intent.action.PROCESS_TEXT" />
+36
+37            <data android:mimeType="text/plain" />
+38        </intent>
+39    </queries>
+40
+41    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+41-->[androidx.media3:media3-common:1.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2e938ea2582cdd4dcdb45ed13ce66616\transformed\jetified-media3-common-1.4.1\AndroidManifest.xml:22:5-79
+41-->[androidx.media3:media3-common:1.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\2e938ea2582cdd4dcdb45ed13ce66616\transformed\jetified-media3-common-1.4.1\AndroidManifest.xml:22:22-76
+42
+43    <permission
+43-->[androidx.core:core:1.13.1] C:\Users\LENOVO\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+44        android:name="com.example.ether_plex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.13.1] C:\Users\LENOVO\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.13.1] C:\Users\LENOVO\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="com.example.ether_plex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47-->[androidx.core:core:1.13.1] C:\Users\LENOVO\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.13.1] C:\Users\LENOVO\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+48
+49    <application
+50        android:name="android.app.Application"
+51        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+51-->[androidx.core:core:1.13.1] C:\Users\LENOVO\.gradle\caches\transforms-3\54a4cfbaad86b9ab2273ca8263e4a153\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+52        android:debuggable="true"
+53        android:icon="@mipmap/launcher_icon"
+54        android:label="Etherplex" >
+55        <activity
+56            android:name="com.example.ether_plex.MainActivity"
+57            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+58            android:exported="true"
+59            android:hardwareAccelerated="true"
+60            android:launchMode="singleTop"
+61            android:theme="@style/LaunchTheme"
+62            android:windowSoftInputMode="adjustResize" >
+63
+64            <!--
+65                 Specifies an Android theme to apply to this Activity as soon as
+66                 the Android process has started. This theme is visible to the user
+67                 while the Flutter UI initializes. After that, this theme continues
+68                 to determine the Window background behind the Flutter UI.
+69            -->
+70            <meta-data
+71                android:name="io.flutter.embedding.android.NormalTheme"
+72                android:resource="@style/NormalTheme" />
+73
+74            <intent-filter>
+75                <action android:name="android.intent.action.MAIN" />
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+78            </intent-filter>
+79        </activity>
+80        <!--
+81             Don't delete the meta-data below.
+82             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+83        -->
+84        <meta-data
+85            android:name="flutterEmbedding"
+86            android:value="2" />
+87
+88        <provider
+88-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-19:20
+89            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+89-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-82
+90            android:authorities="com.example.ether_plex.flutter.image_provider"
+90-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-74
+91            android:exported="false"
+91-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
+92            android:grantUriPermissions="true" >
+92-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-47
+93            <meta-data
+93-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-18:75
+94                android:name="android.support.FILE_PROVIDER_PATHS"
+94-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-67
+95                android:resource="@xml/flutter_image_picker_file_paths" />
+95-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:18:17-72
+96        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+97        <service
+97-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-33:19
+98            android:name="com.google.android.gms.metadata.ModuleDependencies"
+98-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-78
+99            android:enabled="false"
+99-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-36
+100            android:exported="false" >
+100-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-37
+101            <intent-filter>
+101-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-28:29
+102                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+102-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-94
+102-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:27:25-91
+103            </intent-filter>
+104
+105            <meta-data
+105-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:36
+106                android:name="photopicker_activity:0:required"
+106-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-63
+107                android:value="" />
+107-->[:image_picker_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:32:17-33
+108        </service>
+109
+110        <activity
+110-->[:url_launcher_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+111            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+111-->[:url_launcher_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+112            android:exported="false"
+112-->[:url_launcher_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+113            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+113-->[:url_launcher_android] C:\Users\LENOVO\StudioProjects\Etherplex-master\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+114
+115        <uses-library
+115-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\ac5ea9a8b6fd31385d98c2d53414b07d\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+116            android:name="androidx.window.extensions"
+116-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\ac5ea9a8b6fd31385d98c2d53414b07d\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+117            android:required="false" />
+117-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\ac5ea9a8b6fd31385d98c2d53414b07d\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+118        <uses-library
+118-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\ac5ea9a8b6fd31385d98c2d53414b07d\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+119            android:name="androidx.window.sidecar"
+119-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\ac5ea9a8b6fd31385d98c2d53414b07d\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+120            android:required="false" />
+120-->[androidx.window:window:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\ac5ea9a8b6fd31385d98c2d53414b07d\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+121
+122        <provider
+122-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+123            android:name="androidx.startup.InitializationProvider"
+123-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:25:13-67
+124            android:authorities="com.example.ether_plex.androidx-startup"
+124-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:26:13-68
+125            android:exported="false" >
+125-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:27:13-37
+126            <meta-data
+126-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+127                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+127-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+128                android:value="androidx.startup" />
+128-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\LENOVO\.gradle\caches\transforms-3\f278e58515e8cfd3d9ddee03ef955ede\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+129            <meta-data
+129-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+130                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+131                android:value="androidx.startup" />
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+132        </provider>
+133
+134        <receiver
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+135            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+136            android:directBootAware="false"
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+137            android:enabled="true"
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+138            android:exported="true"
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+139            android:permission="android.permission.DUMP" >
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+141                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+144                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+147                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+150                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\LENOVO\.gradle\caches\transforms-3\6ea3fe485a2777491d24973851e37227\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+151            </intent-filter>
+152        </receiver>
+153    </application>
+154
+155</manifest>
